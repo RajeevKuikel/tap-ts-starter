@@ -1,16 +1,16 @@
 import * as tapTypes from './tap-types'
-var parseString = require('xml2js').parseString
+var xml2js = require('xml2js')
 
 export function parseItem(xmlfile: Buffer) {
   return new Promise(function(resolve, reject) {
-    parseString(xmlfile, function(err: any, result: any) {
+    xml2js.parseString(xmlfile, function(err: any, result: any) {
       //console.dir(result);
       if (result != null) {
         let rec = new tapTypes.streamRecord()
         rec.stream = 'xml'
         rec.time_extracted = new Date()
         rec.record = result
-        resolve(rec)
+        resolve(rec) //if the condition result is not equal to null the condition is fulfilled so it is resolved else it is rejected.
       } else {
         reject(Error('It broke'))
       }
