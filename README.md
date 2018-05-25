@@ -36,3 +36,6 @@ This code path is documented [here](dist/docs-aws/index.html) (or [here](../docs
 
 ### Notes
 Note: This document is written in [Markdown](https://daringfireball.net/projects/markdown/). We like to use [Typora](https://typora.io/) and [Markdown Preview Plus](https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl?hl=en-US) for our Markdown work.
+
+### Notes
+Note: I found this *website* really useful to learn **MarkDown**. Here is the link to the website: [MarkDown Tutorial](https://www.markdowntutorial.com)
